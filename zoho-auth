@@ -1,0 +1,46 @@
+	headers_data = Map();
+	
+// 	code url for generate code
+// 	redirectURL = 	https://accounts.zoho.com/oauth/v2/auth?response_type=code&client_id=1000.URLJND5RRR26MCYVMP6I4KAG8UFFWN&scope=ZohoBooks.fullaccess.all&redirect_uri=https://www.google.com/&access_type=offline&prompt=consent
+// 	For using in post man 
+	//https://accounts.zoho.com/oauth/v2/token?grant_type=authorization_code&client_id=1000.URLJND5RRR26MCYVMP6I4KAG8UFFWN&client_secret=0bffe4a4ecb53b29d16ac326cbf9ef8f5661c4d5ff&redirect_uri=https://www.google.com/&code=1000.bc52c038549fccc67c7ef1ce60f90093.8134908c0dbb5e6db8bc62a78b12e1b5
+	
+// 	Refresh token generate format
+// 	refremap = Map();
+// 	refremap.put("grant_type","authorization_code");
+// 	refremap.put("client_id","1000.U8TKPATNMF8LYRR1UBFHMD7VZEIWPA");
+// 	refremap.put("client_secret","507749bdf735366c2d712c411b13c914fc18d111d7");
+// 	refremap.put("redirect_uri","https://www.google.com/");
+// 	refremap.put("code","1000.a78576025d90fe45b25dd9553f8a7177.7e9cf0390d1a61b547faab678d5bddbb");
+// 		refreshTokenGenration = invokeurl
+// 	[
+// 		url :"https://accounts.zoho.com/oauth/v2/token?"
+// 		type :POST
+// 		parameters:refremap
+// 	];
+// 	info refreshTokenGenration ;
+	
+// 	https://www.google.com/?code=1000.bc52c038549fccc67c7ef1ce60f90093.8134908c0dbb5e6db8bc62a78b12e1b5&location=us&accounts-server=https%3A%2F%2Faccounts.zoho.com
+	
+// 	accessToken = Map();
+// 	accessToken.put("refresh_token","1000.5f648a19f0c5dbe41597adb3aa44874b.dac9f25010fbc6b7761a56cb87620ee9");
+// 	accessToken.put("client_id","1000.U8TKPATNMF8LYRR1UBFHMD7VZEIWPA");
+// 	accessToken.put("client_secret","507749bdf735366c2d712c411b13c914fc18d111d7");
+// 	accessToken.put("redirect_uri","https://www.google.com/");
+// 	accessToken.put("grant_type","refresh_token");
+// 	accessTokenGenration = invokeurl
+// 	[
+// 		url :"https://accounts.zoho.com/oauth/v2/token?"
+// 		type :POST
+// 		parameters:accessToken
+// 	];
+// 	info accessTokenGenration; 
+	
+// 	headers_data.put("Authorization","Zoho-oauthtoken " + accessTokenGenration.get("access_token"));
+// 	getContact = invokeUrl
+// 	[
+// 	url: "https://www.zohoapis.com/books/v3/contacts?organization_id=711484220"
+// 	type: GET
+// 	headers: headers_data
+// 	];
+// 	info getContact;
